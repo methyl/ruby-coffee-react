@@ -1,0 +1,26 @@
+{
+  "name": "ruby-coffee-react",
+  "version": "0.2.0",
+  "description": "ruby-coffee-react is a bridge to the npm coffee-react-transform module, and can compile Coffeescript also",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "coffee-react-transform": "^0.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jsdf/ruby-coffee-react.git"
+  },
+  "author": "James Friend <james@jsdf.co> (http://jsdf.co/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsdf/ruby-coffee-react/issues"
+  },
+  "homepage": "https://github.com/jsdf/ruby-coffee-react"
+}

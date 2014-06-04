@@ -2,7 +2,7 @@ puts `./prepublish.sh`
 
 Gem::Specification.new do |s|
   s.name      = 'coffee-react'
-  s.version   = '0.2.0'
+  s.version   = '0.2.1'
   s.date      = '2014-06-02'
 
   s.homepage    = "http://github.com/jsdf/ruby-coffee-react"

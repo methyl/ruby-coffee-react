@@ -1,35 +1,18 @@
-Ruby CoffeeScript
+ruby-coffee-react
 =================
 
-Ruby CoffeeScript is a bridge to the official CoffeeScript compiler.
+`ruby-coffee-react` is a bridge to the npm [coffee-react-transform](https://github.com/jsdf/coffee-react-transform) module.
 
-    CoffeeScript.compile File.read("script.coffee")
+    CoffeeReact.transform File.read("component.cjsx")
 
 
 Installation
 ------------
 
-    gem install coffee-script
-
-*Note: This compiler library has replaced the original CoffeeScript
- compiler that was written in Ruby.*
-
+    gem install coffee-react
 
 Dependencies
 ------------
-
-This library depends on the `coffee-script-source` gem which is
-updated any time a new version of CoffeeScript is released. (The
-`coffee-script-source` gem's version number is synced with each
-official CoffeeScript release.) This way you can build against
-different versions of CoffeeScript by requiring the correct version of
-the `coffee-script-source` gem.
-
-In addition, you can use this library with unreleased versions of
-CoffeeScript by setting the `COFFEESCRIPT_SOURCE_PATH` environment
-variable:
-
-    export COFFEESCRIPT_SOURCE_PATH=/path/to/coffee-script/extras/coffee-script.js
 
 ### JSON
 

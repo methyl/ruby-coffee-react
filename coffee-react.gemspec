@@ -2,13 +2,14 @@ puts `./prepublish.sh`
 
 Gem::Specification.new do |s|
   s.name      = 'coffee-react'
-  s.version   = '0.2.1'
-  s.date      = '2014-06-02'
+  s.version   = '0.2.2'
+  s.date      = '2014-06-05'
 
   s.homepage    = "http://github.com/jsdf/ruby-coffee-react"
   s.summary     = "Ruby Coffeescript React CJSX Transformer Compiler"
   s.description = <<-EOS
-    ruby-coffee-react is a bridge to the npm coffee-react-transform module, and can compile Coffeescript also.
+    ruby-coffee-react is a bridge to the npm coffee-react-transform module, which 
+    transforms CJSX (Coffeescript with React JSX-style markup) into valid Coffeescript.
   EOS
   s.license = "MIT"
 

@@ -3,7 +3,7 @@ ruby-coffee-react
 
 `ruby-coffee-react` is a bridge to the npm [coffee-react-transform](https://github.com/jsdf/coffee-react-transform) module.
 
-    CoffeeReact.transform File.read("component.cjsx")
+    CoffeeReact.transform File.open("component.cjsx")
 
 
 Installation

@@ -12,7 +12,13 @@ TestCase = if defined? Minitest::Test
     Test::Unit::TestCase
   end
 
-require 'coffee_react'
+if ENV['TEST_GEM']
+  puts 'testing gem'
+  require 'coffee-react'
+else
+  puts 'testing source'
+  require 'coffee_react'
+end
 require 'stringio'
 
 class TestCoffeeReact < TestCase

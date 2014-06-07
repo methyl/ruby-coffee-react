@@ -1,3 +1,7 @@
 #!/bin/bash
-browserify -r coffee-react-transform -s > coffee-react-transform.js
-echo ";coffeeReactTransform = require('coffee-react-transform');" >> coffee-react-transform.js
+node node_modules/browserify/bin/cmd.js \
+  --require "coffee-react-transform" \
+  --detect-globals "false" \
+  --insert-global-vars "__filename,__dirname" \
+  --standalone "coffeeReactTransform" \
+  > coffee-react-transform.js

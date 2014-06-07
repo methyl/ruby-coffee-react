@@ -1,15 +1,17 @@
 {
   "name": "ruby-coffee-react",
-  "version": "0.2.0",
+  "version": "0.3.1",
   "description": "ruby-coffee-react is a bridge to the npm coffee-react-transform module, and can compile Coffeescript also",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
-    "coffee-react-transform": "^0.2.0"
+    "coffee-react-transform": "0.3.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "browserify": "^4.1.8"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

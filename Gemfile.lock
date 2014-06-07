@@ -1,0 +1,20 @@
+PATH
+  remote: .
+  specs:
+    coffee-react (0.3.1)
+      execjs
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    execjs (2.2.0)
+    json (1.8.1)
+    rake (10.3.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  coffee-react!
+  json
+  rake

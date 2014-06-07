@@ -7,12 +7,8 @@ module CoffeeReact
   CompilationError = ExecJS::ProgramError
 
   module Source
-    def self.gem_dir
-      Gem::Specification.find_by_name('coffee-react').gem_dir
-    end
-
     def self.path
-      @path ||= "#{gem_dir}/coffee-react-transform.js"
+      @path ||= File.expand_path('../coffee-react-transform.js', File.dirname(__FILE__))
     end
 
     def self.path=(path)

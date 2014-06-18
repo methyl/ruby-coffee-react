@@ -24,3 +24,5 @@ standard library.
 ### ExecJS
 
 The [ExecJS](https://github.com/sstephenson/execjs) library is used to automatically choose the best JavaScript engine for your platform. Check out its [README](https://github.com/sstephenson/execjs/blob/master/README.md) for a complete list of supported engines.
+
+This gem has been tested against the following ExecJS runtimes: Node, RubyRacer, JavaScriptCore. If you encounter any problems with these or any other ExecJS runtimes, please [create a issue](https://github.com/jsdf/ruby-coffee-react/issues).

@@ -22,7 +22,6 @@ Gem::Specification.new do |s|
     'README.md'
   ]
 
-  # s.add_dependency 'coffee-script-source'
   s.add_dependency 'execjs'
   s.add_development_dependency 'json'
   s.add_development_dependency 'rake'

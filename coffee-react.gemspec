@@ -2,8 +2,8 @@ puts `./prepublish.sh`
 
 Gem::Specification.new do |s|
   s.name      = 'coffee-react'
-  s.version   = '0.3.2'
-  s.date      = '2014-06-18'
+  s.version   = '0.4.0'
+  s.date      = '2014-06-30'
 
   s.homepage    = "http://github.com/jsdf/ruby-coffee-react"
   s.summary     = "coffee-react-transform for ruby"

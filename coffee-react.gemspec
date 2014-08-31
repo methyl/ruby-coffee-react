@@ -1,10 +1,13 @@
+# coding: utf-8
+require 'rubygems'
+require 'yaml'
+package = YAML.load_file(File.join(File.dirname(__FILE__), 'package.json'))
+
 puts `./prepublish.sh`
 
 Gem::Specification.new do |s|
   s.name      = 'coffee-react'
-  s.version   = '0.5.0'
-  s.date      = '2014-08-11'
-
+  s.version   = package["version"]
   s.homepage    = "http://github.com/jsdf/ruby-coffee-react"
   s.summary     = "coffee-react-transform for ruby"
   s.description = <<-EOS

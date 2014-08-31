@@ -1,3 +1,4 @@
+ENV['RAILS_VERSION'] ||= '3'
 begin
   require 'bundler/setup'
 rescue LoadError

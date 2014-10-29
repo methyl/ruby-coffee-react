@@ -7,13 +7,13 @@
     "test": "test"
   },
   "dependencies": {
-    "coffee-react-transform": "^0.5.2"
+    "coffee-react-transform": "^2.0.0"
   },
   "devDependencies": {
     "browserify": "^4.1.8"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "EXECJS_RUNTIME=Node rake test_runtime"
   },
   "repository": {
     "type": "git",

@@ -32,7 +32,7 @@ class TestCoffeeReact < TestCase
 
   def test_compile_with_io
     io = StringIO.new('x = <table width={100} />')
-    expected = 'x = React.DOM.table({"width": (100)})'
+    expected = 'x = React.createElement("table", {"width": (100)})'
     actual = CoffeeReact.transform(io)
 
     # debug_print expected, actual

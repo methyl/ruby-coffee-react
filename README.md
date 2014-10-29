@@ -15,6 +15,7 @@ Installation
 Compatibility
 ------------
 ruby-coffee-react 2.x is compatible with react ^0.12.0
+
 ruby-coffee-react 0.x is compatible with react <=0.11.2
 
 Dependencies

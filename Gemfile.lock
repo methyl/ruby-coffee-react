@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    coffee-react (2.0.0)
+    coffee-react (2.1.0)
       execjs
 
 GEM
@@ -9,12 +9,7 @@ GEM
   specs:
     execjs (2.2.1)
     json (1.8.1)
-    libv8 (3.16.14.3)
     rake (10.3.2)
-    ref (1.0.5)
-    therubyracer (0.12.1)
-      libv8 (~> 3.16.14.0)
-      ref
 
 PLATFORMS
   ruby
@@ -23,4 +18,3 @@ DEPENDENCIES
   coffee-react!
   json
   rake
-  therubyracer

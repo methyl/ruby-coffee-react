@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    coffee-react (2.4.1)
+    coffee-react (3.0.0)
       execjs
 
 GEM

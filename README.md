@@ -14,9 +14,8 @@ Installation
 
 Compatibility
 ------------
-ruby-coffee-react 2.x is compatible with react ^0.12.0
-
-ruby-coffee-react 0.x is compatible with react <=0.11.2
+The version numbers of this gem follow those of the `coffee-react-transform` npm 
+package. See information about [compatibility with different versions of React](https://github.com/jsdf/coffee-react-transform#version-compatibility).
 
 Dependencies
 ------------

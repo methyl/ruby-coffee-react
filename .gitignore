@@ -41,5 +41,6 @@ bower_components
 
 # built files
 /coffee-react-transform.js
+/js-syntax-transform.js
 pkg/
 *.gem

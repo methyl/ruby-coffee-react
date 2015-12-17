@@ -7,21 +7,20 @@ module CoffeeReact
   CompilationError = ExecJS::ProgramError
 
   module Source
-    def self.path
-      @path ||= File.expand_path('../coffee-react-transform.js', File.dirname(__FILE__))
+    def self.path(filename)
+      File.expand_path("../#{filename}", File.dirname(__FILE__))
     end
 
-    def self.path=(path)
-      @contents = @context = nil
-      @path = path
+    def self.context(filename)
+      ExecJS.compile(File.read(self.path(filename)))
     end
 
-    def self.contents
-      @contents ||= File.read(path)
+    def self.transform_context
+      @transform_context ||= self.context('coffee-react-transform.js')
     end
 
-    def self.context
-      @context ||= ExecJS.compile(contents)
+    def self.jstransform_context
+      @jstransform_context ||= self.context('js-syntax-transform.js')
     end
   end
 
@@ -35,7 +34,13 @@ module CoffeeReact
     def transform(script, options = {})
       script = script.read if script.respond_to?(:read)
 
-      Source.context.call("coffeeReactTransform", script, options)
+      Source.transform_context.call("coffeeReactTransform", script, options)
+    end
+
+    def jstransform(script)
+      script = script.read if script.respond_to?(:read)
+
+      Source.jstransform_context.call("coffeeReactJSSyntaxTransform", script)
     end
   end
 end

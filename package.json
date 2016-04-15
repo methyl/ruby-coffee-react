@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "coffee-react-jstransform": "^1.0.0",
-    "coffee-react-transform": "^3.3.0"
+    "coffee-react-transform": "methyl/coffee-react-transform"
   },
   "devDependencies": {
     "browserify": "^4.1.8"

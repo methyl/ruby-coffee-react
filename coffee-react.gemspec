@@ -3,15 +3,13 @@ require 'rubygems'
 require 'yaml'
 package = YAML.load_file(File.join(File.dirname(__FILE__), 'package.json'))
 
-puts `./prepublish.sh`
-
 Gem::Specification.new do |s|
   s.name      = 'coffee-react'
   s.version   = package["version"]
   s.homepage    = "http://github.com/jsdf/ruby-coffee-react"
   s.summary     = "coffee-react-transform for ruby"
   s.description = <<-EOS
-    ruby-coffee-react is a bridge to the npm coffee-react-transform module, which 
+    ruby-coffee-react is a bridge to the npm coffee-react-transform module, which
     transforms CJSX (Coffeescript with React JSX-style markup) into valid Coffeescript.
     If you want to use CJSX with Rails/Sprockets, see the sprockets-coffee-react gem.
   EOS
